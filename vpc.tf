@@ -1,5 +1,6 @@
 module "vpc" {
-    source = "../terraform-vpc"
+    #source = "../terraform-vpc-creation"
+    source = "git::https://github.com/sriramulasrinath/terraform-vpc-creation.git?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     public_subnet_cidrs = var.public_subnet_cidrs
